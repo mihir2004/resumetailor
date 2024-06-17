@@ -1,14 +1,53 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Resume Tailoring</title>
-    <link rel="stylesheet" type="text/css" href="/css/styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resume Tailoring Service</title>
+  <link rel="stylesheet" href="/css/styles.css">
 </head>
 <body>
-    <h1>Upload Your Resume</h1>
-    <form action="/upload" method="post" enctype="multipart/form-data">
-        <input type="file" name="resume" required>
-        <button type="submit">Upload</button>
-    </form>
+  <% include partials/header %>
+
+  <section class="hero">
+    <div class="container">
+      <h1>Enhance Your Resume with AI</h1>
+      <p>Get a tailored resume that stands out in the job market. Let our AI analyze and improve your resume.</p>
+      <a href="/upload" class="btn btn-primary">Get Started</a>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="container">
+      <h2>Features</h2>
+      <div class="feature-list">
+        <div class="feature-item">
+          <h3>AI-Powered Analysis</h3>
+          <p>Leverage the power of AI to enhance your resume with the latest industry trends.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Personalized Recommendations</h3>
+          <p>Receive tailored suggestions to improve your resume and increase your chances of getting hired.</p>
+        </div>
+        <div class="feature-item">
+          <h3>Easy to Use</h3>
+          <p>Upload your resume and get instant feedback and a new tailored version in a few clicks.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="how-it-works" class="how-it-works">
+    <div class="container">
+      <h2>How It Works</h2>
+      <ol>
+        <li>Upload your resume in PDF format.</li>
+        <li>Our AI analyzes and enhances your resume.</li>
+        <li>Receive your new resume along with improvement recommendations.</li>
+      </ol>
+    </div>
+  </section>
+
+  <% include partials/footer %>
 </body>
 </html>
